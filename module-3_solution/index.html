@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Title -->
-  <title>Module 3 Solution</title>
+  <title>Food, LLC</title>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles */
+    .dropdown-menu {
+      background-color: #f8f9fa; /* Set background color for dropdown menu */
+    }
+    .tall-section {
+      height: 1000px; /* Set the height of the tall section */
+      background-color: #e9ecef; /* Set background color for the tall section */
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <!-- Navbar toggle button -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
+          <span class="icon-bar"></span>
         </button>
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="#">Food, LLC</a>
+        <a class="navbar-brand visible-xs" href="#">Food, LLC</a>
       </div>
-      <!-- Navbar menu items -->
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <!-- Menu items for desktop and tablet view -->
-          <!-- Add your menu items here -->
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav">
+          <!-- Desktop and Tablet View -->
+          <li class="visible-md visible-lg"><a href="#">Food, LLC</a></li>
         </ul>
-        <!-- Dropdown menu for mobile view -->
+        <!-- Mobile View Dropdown Menu -->
         <ul class="nav navbar-nav navbar-right visible-xs">
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Chicken</a></li>
               <li><a href="#">Beef</a></li>
@@ -49,24 +50,25 @@
     </div>
   </nav>
 
-  <!-- Page content -->
+  <!-- Page Heading -->
   <div class="container">
-    <!-- Page heading -->
     <h1 class="text-center">Our Menu</h1>
-    <div class="row">
-      <!-- Tall section -->
-      <div class="col-xs-12 tall-section">
-        <!-- Tall section content -->
-        <p>This is a sample tall section content. You can replace this with your actual content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis quam sit amet arcu fringilla blandit. Nullam euismod dolor ac elit pharetra, id semper risus congue. Phasellus sed justo turpis. Sed fringilla velit ac eros faucibus, ut laoreet quam tempor. Mauris sed nibh ut felis aliquam pulvinar. Integer in odio vitae nisl mattis eleifend. Proin lobortis ipsum nec purus ultricies mattis. Sed id ligula nec ipsum sollicitudin commodo. Suspendisse potenti. Pellentesque hendrerit tortor vel elit tristique tristique. Nullam vel ultrices lectus. Nam condimentum eu elit ut consectetur.</p>
-        <p>Nulla facilisi. Mauris interdum leo sit amet enim feugiat, nec tincidunt urna lacinia. Mauris posuere mauris ut neque pretium, id lacinia odio laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed eu libero at justo fermentum accumsan. Vivamus vestibulum metus sit amet felis tempor, ac ultricies leo posuere. Integer et odio et urna tempus sollicitudin. Fusce elementum, ipsum a luctus consequat, urna nunc egestas metus, eu sagittis mauris arcu at tortor.</p>
-        <p>Phasellus in est eget sapien convallis placerat. Suspendisse tincidunt augue vitae ultricies dictum. Integer scelerisque pretium ex. Curabitur ut velit vitae lorem venenatis consectetur. Cras efficitur ligula sit amet augue commodo, ac aliquet justo viverra. Mauris aliquet enim nec dolor malesuada, et iaculis libero facilisis. Donec a odio sed urna blandit accumsan. Suspendisse id libero eu ligula suscipit laoreet id sit amet dui. Donec interdum nec orci eget aliquam. In vestibulum odio ut justo consectetur, eget mattis justo consequat. Maecenas fermentum nisi at erat tincidunt, id posuere nunc sodales.</p>
-      </div>
-    </div>
   </div>
 
-  <!-- jQuery -->
+  <!-- Tall Section -->
+  <section class="tall-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <!-- Your content here -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- Bootstrap JavaScript -->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
